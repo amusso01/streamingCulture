@@ -1,0 +1,217 @@
+/* ***** ----------------------------------------------- ***** **
+** ***** Wordpress Related Styles
+** ***** ----------------------------------------------- ***** */
+
+/* ***** Wordpress Generated Class Styles
+** ***** ----------------------------------------------- ***** */
+
+// Add body wrapper to work with purgecss whitelist
+
+/*! purgecss start ignore */
+body {
+  .alignnone,
+  a img.alignnone {
+    @apply u-mx-0 u-my-30 md:u-my-35;
+  }
+
+  .aligncenter,
+  div.aligncenter {
+    @apply u-block u-mx-auto u-my-30 md:u-my-35;
+  }
+
+  .alignright,
+  a img.alignright {
+    @apply u-float-right u-my-30 u-mr-0 u-ml-30 md:u-my-35 md:u-ml-35;
+  }
+
+  .alignleft,
+  a img.alignleft {
+    @apply u-float-left u-my-30 u-mr-30 u-ml-0 md:u-my-35 md:u-mr-35;
+  }
+
+  a img.aligncenter {
+    @apply u-block u-mx-auto;
+  }
+
+  .wp-caption {
+    @apply u-mb-15 u-max-w-full md:u-mb-20;
+  }
+
+  .wp-caption img {
+    @apply u-border-0 u-m-0 u-p-0;
+  }
+
+  .wp-caption .wp-caption-text {
+    @apply u-text-12 u-italic u-mt-10 md:u-text-14;
+  }
+
+  .wp-smiley {
+    @apply u-max-h-10 md:u-max-h-15;
+    margin: 0 !important;
+  }
+
+  .gallery dl {
+    @apply u-m-0;
+  }
+
+  .gallery-caption {
+    @apply -u-mt-15 u-mr-0 u-mb-0 u-ml-0 md:-u-mt-20;
+  }
+
+  blockquote.left {
+    @apply u-float-left u-ml-0 u-mr-20 u-text-right u-w-1/3;
+  }
+
+  blockquote.right {
+    @apply u-float-right u-mr-0 u-ml-20 u-text-left u-w-1/3;
+  }
+
+  /* Text meant only for screen readers. */
+  .screen-reader-text {
+    @apply u-overflow-hidden;
+    clip: rect(0.1rem, 0.1rem, 0.1rem, 0.1rem);
+    height: 0.1rem;
+    position: absolute !important;
+    width: 0.1rem;
+
+    &:focus {
+      @apply u-block u-text-14 u-font-bold u-h-auto u-leading-normal u-no-underline u-w-auto;
+      background-color: #f1f1f1;
+      border-radius: 0.3rem;
+      box-shadow: 0 0 0.2rem 0.2rem rgba(0 0 0 / 60%);
+      clip: auto !important;
+      color: #21759b;
+      left: 0.5rem;
+      padding: 1.5rem 2.3rem 1.4rem;
+      top: 0.5rem;
+      z-index: 100000; /* Above WP toolbar. */
+    }
+  }
+}
+
+
+/* ***** Custom Login Page Styles
+** ***** ----------------------------------------------- ***** */
+
+$logoWidth: 10rem;
+$logoHeight: 10rem;
+
+body { /* stylelint-disable-line no-duplicate-selectors */
+  &.login {
+    @apply u-block u-bg-grey-dark-2;
+
+    &.interim-login {
+      h1 {
+        a {
+          height: $logoHeight;
+          width: $logoWidth;
+        }
+      }
+    }
+
+    #login {
+      @apply u-w-auto u-px-20 u-pb-0;
+      max-width: 36rem;
+      padding-top: 15vh;
+    }
+
+    h1 {
+      @apply u-text-36 u-leading-none u-mb-40;
+
+      a {
+        @apply u-bg-cover;
+        background-image: url('../images/logo-bymattlee-login.svg');
+        height: $logoHeight;
+        width: $logoWidth;
+      }
+    }
+
+    .message,
+    form {
+      @apply u-bg-transparent u-shadow-none u-text-grey-light-a;
+    }
+
+    .message,
+    #login_error { /* stylelint-disable-line */
+      @apply u-bg-grey-dark-3 u-shadow-none u-text-14 u-leading-normal;
+    }
+
+    .message {
+      // Update with neutral color that matches brand
+    }
+
+    #login_error { /* stylelint-disable-line */
+      // Update with highlight color that matches brand
+    }
+
+    label {
+      @apply u-text-grey-light-a;
+    }
+
+    #nav a {
+      @apply u-text-grey-dark-6 hover:u-text-white;
+    }
+
+    form {
+      @apply u-border-0 u-mt-20 u-p-0;
+
+      .input,
+      input[type='checkbox'] {
+        @apply u-bg-transparent u-border u-border-solid u-border-grey-dark-4 u-rounded-none u-shadow-none
+          u-text-grey-light-c u-px-10;
+        padding-bottom: 0.1rem;
+        padding-top: 0.1rem;
+      }
+
+      input[type='checkbox'] {
+        &:checked {
+          &::before {
+            filter: grayscale(100%);
+          }
+        }
+      }
+
+      input {
+        @include autofill(theme('colors.grey-dark.4'), theme('colors.grey-light.c'), theme('colors.grey-dark.2'));
+      }
+    }
+
+    .dashicons {
+      @apply u-text-grey-light-a;
+    }
+
+    .button {
+      &.wp-hide-pw {
+        .dashicons {
+          @apply u-w-20 u-h-20;
+        }
+      }
+    }
+
+    #backtoblog {
+      @apply u-hidden;
+    }
+
+    #nav {
+      @apply u-p-0;
+    }
+  }
+
+  &.wp-core-ui {
+    .button,
+    .button-primary:active,
+    .button-primary:focus {
+      @apply u-bg-grey-dark-4 u-border-0 u-rounded-none u-shadow-none u-transition-colors u-duration-slow
+        hover:u-bg-black;
+    }
+
+    .button.button-large {
+      @apply u-text-12 u-h-auto u-px-15;
+      line-height: 2.8rem;
+      padding-bottom: 0.4rem;
+      padding-top: 0.4rem;
+    }
+  }
+}
+
+/*! purgecss end ignore */

@@ -1,0 +1,31 @@
+/* ***** ----------------------------------------------- ***** **
+** ***** Objects/Nav Styles
+** ***** ----------------------------------------------- ***** */
+
+.o-nav {
+  $this: &;
+  @apply u-fixed u-w-full u-z-10 u-bg-purple-light u-left-0 u-top-0;
+
+  &-menu {
+    @apply l-container;
+  }
+
+  &-menuListItem {
+    @apply u-inline-block u-ml-10 md:u-ml-15;
+
+    &:first-child {
+      @apply u-ml-0;
+    }
+
+    &--current {
+      #{$this}-menuItem {
+        @apply u-text-text;
+      }
+    }
+  }
+
+  &-menuItem {
+    @apply u-inline-block u-font-heading u-text-40;
+  }
+
+}

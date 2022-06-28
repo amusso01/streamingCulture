@@ -1,0 +1,89 @@
+/* ***** ----------------------------------------------- ***** **
+** ***** Editor Styles
+** ***** ----------------------------------------------- ***** */
+
+
+/* ***** Base Styles
+** ***** ----------------------------------------------- ***** */
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  @apply u-font-fallback u-text-16 u-leading-normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  @apply u-leading-loose u-mx-0 u-my-15;
+}
+
+ul,
+ol {
+  @apply u-leading-loose u-mr-0 u-my-15 u-ml-30 u-p-0;
+
+  li {
+    @apply u-my-10;
+  }
+}
+
+a {
+  @apply u-text-black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply u-font-fallback u-font-bold u-m-0 u-p-0;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  @apply u-text-36;
+}
+
+h2 {
+  @apply u-text-30;
+}
+
+h3 {
+  @apply u-text-24;
+}
+
+h4 {
+  @apply u-text-18;
+}
+
+h5 {
+  @apply u-text-14;
+}
+
+h6 {
+  @apply u-text-12;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  @apply u-mt-30;
+}
+
+blockquote {
+  @apply u-border-0 u-border-l-2 u-border-solid u-border-black u-my-30 u-mx-20 u-pl-30;
+}
+
+hr {
+  @apply u-border-0 u-border-t-1 u-border-solid u-border-black u-my-40;
+}
+
+
+/* ***** Custom Editor Styles
+** ***** ----------------------------------------------- ***** */
