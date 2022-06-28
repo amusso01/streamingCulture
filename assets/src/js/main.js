@@ -9,11 +9,13 @@ import Fade from './transitions/Fade'
 import { init as globalInit } from './components/global.js';
 import { init as richTextInit } from './components/richText.js';
 import Scroll2Reveal from './vendors/Scroll2Reveal.js';
+import AlpineInstance from 'alpinejs';
 
 // Init on first load
 globalInit();
 richTextInit();
 const s2r = new Scroll2Reveal();
+
 
 // Init Highway
 const H = new Highway.Core({
@@ -36,6 +38,9 @@ H.on('NAVIGATE_IN', ({to, location}) => {
   updateBodyClasses(to);
   s2r.reInit();
   richTextInit();
+
+  AlpineInstance.store('openMenu').toggle();
+  AlpineInstance.store('openMenu').toggleOverflow();
 });
 
 // Executed when the page has loaded completely

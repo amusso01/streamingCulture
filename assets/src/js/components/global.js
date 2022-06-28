@@ -15,6 +15,10 @@ const init = () => {
  
     toggle() {
         this.on = ! this.on
+    },
+
+    toggleOverflow() {
+      document.body.classList.toggle('s-noscroll');
     }
   })
 

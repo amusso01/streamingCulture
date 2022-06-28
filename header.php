@@ -39,7 +39,9 @@
 
 </head>
 
-<body <?php body_class( 'js-body' ); ?>>
+<body <?php body_class( 'js-body' ); ?> >
+
+    <data x-data x-init="$watch('$store.openMenu.on', $store.openMenu.toggleOverflow)"></data>
 
   <?php get_template_part( 'partials/global/header' ); ?>
 

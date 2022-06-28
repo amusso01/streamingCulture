@@ -76,6 +76,7 @@ module.exports = {
       none: '1',
       tight: '1.2',
       normal: '1.4',
+      medium: '1.6',
       loose: '1.8',
     },
     letterSpacing: {
@@ -89,6 +90,7 @@ module.exports = {
     },
     spacing: {
       0: '0',
+      1: '0.1rem',
       3: '0.3rem',
       5: '0.5rem',
       8: '0.8rem',
@@ -173,6 +175,7 @@ module.exports = {
       size: '50px', // must be in px.
       color: '#ffffff',
       colorLight: '#fff8f4',
+      colorActive: '#000032',
       padding: '3px', // must be in px.
       animationSpeed: 1
     }

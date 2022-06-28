@@ -5,13 +5,24 @@
   ** ***** ----------------------------------------------- ***** */
 
   // Display menu
-  function bml_the_menu( $name ) {
+  function bml_the_menu( $name , $class = "o-nav-menu") {
 
     if ( has_nav_menu( $name ) ) {
       wp_nav_menu( array( 
         'theme_location' => $name, 
-        'menu_class' => 'o-nav-menu',
+        'menu_class' => $class,
         'walker' => new Site_Nav_Walker()
+      ) );
+    }
+
+  }
+  function bml_the_secondary_menu( $name , $class = "o-nav-menu") {
+
+    if ( has_nav_menu( $name ) ) {
+      wp_nav_menu( array( 
+        'theme_location' => $name, 
+        'menu_class' => $class,
+        'walker' => new Secondary_Nav_Walker()
       ) );
     }
 

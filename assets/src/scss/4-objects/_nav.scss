@@ -4,14 +4,18 @@
 
 .o-nav {
   $this: &;
-  @apply u-fixed u-w-full u-z-10 u-bg-purple-light u-left-0 u-top-0;
+  @apply u-fixed u-w-full u-z-10 u-bg-purple-light u-left-0 -u-top-full u-ease-out u-duration-slow u-transition-all xs:u-flex sm:u-block;
+
+  &.s-open{
+    @apply u-top-0;
+  }
 
   &-menu {
-    @apply l-container;
+    @apply l-container u-my-40 sm:u-my-60 u-flex u-flex-col u-flex-1 sm:u-flex-none sm:u-flex-row sm:u-gap-x-45 lg:u-justify-between;
   }
 
   &-menuListItem {
-    @apply u-inline-block u-ml-10 md:u-ml-15;
+    @apply u-inline-block;
 
     &:first-child {
       @apply u-ml-0;
@@ -19,13 +23,124 @@
 
     &--current {
       #{$this}-menuItem {
-        @apply u-text-text;
+        @apply u-text-text u-translate-y-20;
+
+        @include text-underline;
+
       }
     }
   }
 
   &-menuItem {
-    @apply u-inline-block u-font-heading u-text-40;
+    @apply u-inline-block u-font-heading u-text-24 sm:u-text-28 md:u-text-30 lg:u-text-40 u-font-bold u-text-text u-duration-slow u-transition-all hover:u-translate-y-20;
   }
 
+
+  // SECONDARY
+  &-secondary-menu{
+    @apply l-container u-my-40   ;
+
+
+   // TENDINA 
+    // &::after{
+    //   content: '';
+    //   position: fixed;
+    //   height: 100vh;
+    //   width: 100%;
+    //   background-color: red;
+    //   left: 0;
+    //   top: 0;
+    //   z-index: -1;
+    // }
+
+  }
+
+  &-secondary-menuListItem{
+
+    &:nth-child(1){
+      #{$this}-secondary-menuItem {
+        &::before{
+          content: "01 - ";
+          
+        }
+      }
+    }
+
+    &:nth-child(2){
+      #{$this}-secondary-menuItem {
+        &::before{
+          content: "02 - ";
+          
+        }
+      }
+    }
+
+    &:nth-child(3){
+      #{$this}-secondary-menuItem {
+        &::before{
+          content: "03 - ";
+          
+        }
+      }
+    }
+
+    &:nth-child(4){
+
+      @apply u-mb-20 sm:u-mb-45;
+
+
+      #{$this}-secondary-menuItem {
+        &::before{
+          content: "04 - ";
+          
+        }
+      }
+    }
+
+  }
+
+  &-secondary-menuListItem {
+
+    @apply u-mb-5 sm:u-mb-0;
+    
+    &.s-disabled{
+
+      #{$this}-secondary-menuItem {
+        @apply u-pointer-events-none u-text-purple-lighter ;
+        
+      }
+    }
+
+  }
+
+  &-secondary-menuListItem--current {
+    #{$this}-secondary-menuItem {
+
+      @include text-underline;
+
+    }
+  }
+
+  &-secondary-menuItem {
+    @apply u-text-18 sm:u-text-30 u-leading-medium;
+    
+    &:hover{
+      @include text-underline;
+    }
+
+    >br{
+      display: none;
+    }
+
+  }
+
+}
+
+// TENDINA
+.o-nav-curtains{
+  @apply -u-top-full u-transition-all u-duration-slow u-ease-in;
+
+  &.s-active{
+    @apply u-top-0;
+  }
 }

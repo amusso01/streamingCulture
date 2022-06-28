@@ -3,6 +3,7 @@
 ** ***** ----------------------------------------------- ***** */
 
 import Highway from '@dogstudio/highway';
+
 import gsap from 'gsap';
 
 class Fade extends Highway.Transition {
@@ -19,6 +20,8 @@ class Fade extends Highway.Transition {
 
   out({ from, done }) {
     gsap.fromTo(from, 0.3, {opacity: 1}, {opacity: 0, onComplete: done});
+   
+
   }
 }
 
