@@ -16,12 +16,12 @@
       'icon_url'    => 'dashicons-admin-generic',
     ));
     
-    // Add Social Options section under the Global Options tab
-    // acf_add_options_sub_page( array(
-    //   'page_title'  => __( 'Social Options', 'bymattlee' ),
-    //   'menu_title'  => __( 'Social', 'bymattlee' ),
-    //   'parent_slug' => 'global-options',
-    // ));
+    // Add Footer Options section under the Global Options tab
+    acf_add_options_sub_page( array(
+      'page_title'  => __( 'Footer', 'bymattlee' ),
+      'menu_title'  => __( 'Footer', 'bymattlee' ),
+      'parent_slug' => 'global-options',
+    ));
 
     // Add Code Options section under the Global Options tab
     acf_add_options_sub_page( array(

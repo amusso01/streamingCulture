@@ -6,6 +6,19 @@
   font-size: 62.5%;
 }
 
+@layer base {
+
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+  }
+}
+
 *::selection {
   @apply u-bg-grey-light-a u-text-white;
 }

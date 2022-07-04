@@ -39,8 +39,6 @@ H.on('NAVIGATE_IN', ({to, location}) => {
   s2r.reInit();
   richTextInit();
 
-  AlpineInstance.store('openMenu').toggle();
-  AlpineInstance.store('openMenu').toggleOverflow();
 });
 
 // Executed when the page has loaded completely
@@ -57,6 +55,10 @@ H.on('NAVIGATE_END', ({to, location}) => {
     const adminBarLinks = document.querySelectorAll('#wpadminbar a');
     H.detach(adminBarLinks);
   }
+
+  setTimeout(() => {
+    AlpineInstance.store('openMenu').on == true ? AlpineInstance.store('openMenu').toggle() : null ;
+  }, 200);
 
   trackGA(to, location);
 });

@@ -41,8 +41,6 @@
 
 <body <?php body_class( 'js-body' ); ?> >
 
-    <data x-data x-init="$watch('$store.openMenu.on', $store.openMenu.toggleOverflow)"></data>
-
   <?php get_template_part( 'partials/global/header' ); ?>
 
-  <section class="u-flex-1 u-py-40 md:u-py-80">
+  <section class="u-flex-1">

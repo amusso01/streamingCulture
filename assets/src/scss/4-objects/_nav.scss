@@ -11,7 +11,7 @@
   }
 
   &-menu {
-    @apply l-container u-my-40 sm:u-my-60 u-flex u-flex-col u-flex-1 sm:u-flex-none sm:u-flex-row sm:u-gap-x-45 lg:u-justify-between;
+    @apply l-container--small u-my-40 sm:u-my-60 u-flex u-flex-col u-flex-1 sm:u-flex-none sm:u-flex-row sm:u-gap-x-45 lg:u-justify-between;
   }
 
   &-menuListItem {
@@ -38,7 +38,7 @@
 
   // SECONDARY
   &-secondary-menu{
-    @apply l-container u-my-40   ;
+    @apply l-container--small u-my-40   ;
 
 
    // TENDINA 

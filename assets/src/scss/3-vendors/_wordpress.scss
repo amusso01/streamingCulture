@@ -93,8 +93,8 @@ body {
 /* ***** Custom Login Page Styles
 ** ***** ----------------------------------------------- ***** */
 
-$logoWidth: 10rem;
-$logoHeight: 10rem;
+$logoWidth: 9.3rem;
+$logoHeight: 8.9rem;
 
 body { /* stylelint-disable-line no-duplicate-selectors */
   &.login {
@@ -120,7 +120,7 @@ body { /* stylelint-disable-line no-duplicate-selectors */
 
       a {
         @apply u-bg-cover;
-        background-image: url('../images/logo-bymattlee-login.svg');
+        background-image: url('../images/logo.svg');
         height: $logoHeight;
         width: $logoWidth;
       }
@@ -206,7 +206,7 @@ body { /* stylelint-disable-line no-duplicate-selectors */
     }
 
     .button.button-large {
-      @apply u-text-12 u-h-auto u-px-15;
+      @apply u-text-14 u-h-auto u-px-15;
       line-height: 2.8rem;
       padding-bottom: 0.4rem;
       padding-top: 0.4rem;

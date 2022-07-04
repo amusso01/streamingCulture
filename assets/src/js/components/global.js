@@ -15,11 +15,23 @@ const init = () => {
  
     toggle() {
         this.on = ! this.on
+
+        if(this.on === true){
+          this.addOverflow();
+        }else{
+          this.removeOverfolw()
+        }
+
     },
 
-    toggleOverflow() {
-      document.body.classList.toggle('s-noscroll');
+    addOverflow() {
+      document.body.classList.toggle('s-noscroll')
+    },
+
+    removeOverfolw(){
+      document.body.classList.remove('s-noscroll')
     }
+
   })
 
   Alpine.start();

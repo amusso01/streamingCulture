@@ -7,15 +7,15 @@
   .l-container {
 
     @apply u-w-full u-mx-auto u-px-30 u-relative sm:u-px-50;
-    max-width: 125rem;
+    max-width: 145rem;
 
     &--small {
       @apply u-w-full u-mx-auto u-px-30 u-relative sm:u-px-50;
-      max-width: 96rem;
+      max-width: 110rem;
     }
 
     &--wide {  
-      @apply u-w-full u-mx-auto u-px-30 u-relative sm:u-px-40;
+      @apply u-w-full u-mx-auto u-px-30 u-relative sm:u-px-50;
       max-width: 215rem;
     }
 

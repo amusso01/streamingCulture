@@ -20,11 +20,11 @@
   }
 
   .u-h1 {
-    @apply u-text-36 sm:u-text-48;
+    @apply u-text-36 sm:u-text-48 lg:u-text-80;
   }
 
   .u-h2 {
-    @apply u-text-30 sm:u-text-36;
+    @apply u-text-30 sm:u-text-36 lg:u-text-50;
   }
 
   .u-h3 {
@@ -68,11 +68,11 @@
     }
 
     h1 {
-      @apply u-text-36 sm:u-text-48;
+      @apply u-text-36 sm:u-text-48 xl:u-text-80;
     }
 
     h2 {
-      @apply u-text-30 sm:u-text-36;
+      @apply u-text-30 sm:u-text-36 xl:u-text-50;
     }
 
     h3 {
@@ -97,7 +97,7 @@
     }
 
     p {
-      @apply u-leading-loose u-my-20 sm:u-my-30;
+      @apply u-leading-paragraph u-my-20 sm:u-my-30;
     }
 
     ul,
