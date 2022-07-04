@@ -20,6 +20,7 @@ module.exports = {
       white: '#fff',
       text: '#000032',
       orange: '#FF7100',
+      red: '#e05555',
       purple: {
         'dark': '#5032C8',
         'light': '#E3DCFF',
@@ -97,7 +98,9 @@ module.exports = {
     spacing: {
       0: '0',
       1: '0.1rem',
+      2: '0.2rem',
       3: '0.3rem',
+      4: '0.4rem',
       5: '0.5rem',
       8: '0.8rem',
       10: '1rem',
@@ -136,6 +139,9 @@ module.exports = {
       230: '23rem',
       240: '24rem',
       250: '25rem',
+      260: '26rem',
+      270: '27rem',
+      280: '28rem',
     },
     borderWidth: {
       DEFAULT: '0.1rem',

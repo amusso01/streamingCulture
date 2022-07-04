@@ -23,6 +23,12 @@
       'parent_slug' => 'global-options',
     ));
 
+    acf_add_options_sub_page( array(
+      'page_title'  => __( 'Pop up', 'bymattlee' ),
+      'menu_title'  => __( 'Pop up', 'bymattlee' ),
+      'parent_slug' => 'global-options',
+    ));
+
     // Add Code Options section under the Global Options tab
     acf_add_options_sub_page( array(
       'page_title'  => __( 'Code Options', 'bymattlee' ),

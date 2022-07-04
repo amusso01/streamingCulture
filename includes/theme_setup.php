@@ -116,4 +116,8 @@
   }
   add_action('_admin_menu', 'remove_editor_menu', 1);
 
+
+// REMOVE ACF  p tags
+  add_filter( 'wpcf7_autop_or_not', '__return_false' );
+
 ?>
