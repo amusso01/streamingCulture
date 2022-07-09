@@ -38,4 +38,6 @@ const trackGA = (to, location) => {
   });
 };
 
-export { setActiveLink, updateBodyClasses, trackGA };
+
+
+export { setActiveLink, updateBodyClasses, trackGA};

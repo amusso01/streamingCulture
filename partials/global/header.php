@@ -1,6 +1,6 @@
 <header class="u-py-20 c-header-main " role="banner">
   <div class="l-container--wide u-flex u-items-center u-justify-between">
-    <h1>
+    <h1 id="homeLogo">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="xs:u-flex xs:u-items-center" aria-label="<?php bloginfo(); ?>">
         <svg width="292" height="89" viewBox="0 0 292 89" class=" u-w-200 xs:u-w-full" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <rect width="93" height="89" fill="url(#pattern0)"/>
@@ -21,7 +21,7 @@
     </nav>
     <div class="o-nav-curtains u-fixed u-w-screen u-z-9 u-h-screen u-bg-purple-lighter u-left-0" x-data :class="{'s-active': $store.openMenu.on }"></div>
 
-    <div class="u-c-hamburger u-c-hamburger--parallel u-z-header u-self-start" x-data @click="$store.openMenu.toggle();" :class="{'u-active': $store.openMenu.on }">
+    <div class="u-c-hamburger u-c-hamburger--parallel u-z-header u-self-start u-ml-auto " x-data @click="$store.openMenu.toggle();" :class="{'u-active': $store.openMenu.on }">
       <div class="u-c-hamburger-inner">
           <span class="u-c-hamburger-bar"></span>
           <span class="u-c-hamburger-bar"></span>

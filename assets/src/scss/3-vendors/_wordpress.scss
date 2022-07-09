@@ -98,7 +98,9 @@ $logoHeight: 8.9rem;
 
 body { /* stylelint-disable-line no-duplicate-selectors */
   &.login {
-    @apply u-block u-bg-grey-dark-2;
+    @apply u-block u-bg-text;
+
+
 
     &.interim-login {
       h1 {

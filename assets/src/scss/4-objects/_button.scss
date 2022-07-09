@@ -3,7 +3,8 @@
 ** ***** ----------------------------------------------- ***** */
 
 .o-button {
-  @apply u-inline-block u-bg-grey-light-c u-text-black u-leading-loose u-px-20 u-py-8
-    u-transition-colors u-duration-slow hover:u-bg-grey-dark-4 hover:u-text-grey-light-c
-    active:u-bg-grey-light-a active:u-text-black sm:u-px-25 sm:u-py-10;
+  @apply u-border u-border-text u-text-25 u-py-10 u-px-20 u-transition-all u-duration-normal u-rounded-full u-text-center u-w-200 u-mx-auto;
+  &:hover {
+    @apply u-bg-text u-text-white u-cursor-pointer;
+  }
 }

@@ -4,7 +4,7 @@
 
 .o-nav {
   $this: &;
-  @apply u-fixed u-w-full u-z-10 u-bg-purple-light u-left-0 -u-top-full u-ease-out u-duration-slow u-transition-all xs:u-flex sm:u-block;
+  @apply u-fixed u-w-full u-z-10 u-bg-purple-light u-left-0 -u-top-full u-ease-out u-duration-medium u-transition-all xs:u-flex sm:u-block;
 
   &.s-open{
     @apply u-top-0;
@@ -138,7 +138,7 @@
 
 // TENDINA
 .o-nav-curtains{
-  @apply -u-top-full u-transition-all u-duration-slow u-ease-in;
+  @apply -u-top-full u-transition-all u-duration-medium u-ease-in;
 
   &.s-active{
     @apply u-top-0;

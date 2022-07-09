@@ -9,11 +9,13 @@
 
       <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part( 'partials/page/default' ); ?>
+        <?php get_template_part( 'partials/home/ricerca' ); ?>
 
       <?php endwhile; ?>
 
     </main>
+
+    <?php get_template_part( 'partials/home/modal' ) ?>
 
   </div>
 </div>

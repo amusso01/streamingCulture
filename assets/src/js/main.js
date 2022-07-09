@@ -3,13 +3,14 @@
 /* ***** ----------------------------------------------- ***** */
 
 import Highway from '@dogstudio/highway';
-import { setActiveLink, updateBodyClasses, trackGA } from './components/highway.js';
+import { setActiveLink, updateBodyClasses, trackGA} from './components/highway.js';
 import Fade from './transitions/Fade'
 
 import { init as globalInit } from './components/global.js';
 import { init as richTextInit } from './components/richText.js';
 import Scroll2Reveal from './vendors/Scroll2Reveal.js';
 import AlpineInstance from 'alpinejs';
+import { HomeRenderer } from './components/renderers.js';
 
 // Init on first load
 globalInit();
@@ -21,6 +22,9 @@ const s2r = new Scroll2Reveal();
 const H = new Highway.Core({
   transitions: {
     default: Fade
+  },
+  renderers: {
+    home: HomeRenderer
   }
 });
 
@@ -58,7 +62,7 @@ H.on('NAVIGATE_END', ({to, location}) => {
 
   setTimeout(() => {
     AlpineInstance.store('openMenu').on == true ? AlpineInstance.store('openMenu').toggle() : null ;
-  }, 200);
+  }, 160);
 
   trackGA(to, location);
 });

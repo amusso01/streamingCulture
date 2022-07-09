@@ -142,6 +142,7 @@ module.exports = {
       260: '26rem',
       270: '27rem',
       280: '28rem',
+      400: '40rem',
     },
     borderWidth: {
       DEFAULT: '0.1rem',
@@ -176,6 +177,7 @@ module.exports = {
     transitionDuration: {
       fast: '150ms',
       normal: '300ms',
+      medium: '400ms',
       slow: '500ms',
     },
     transitionTimingFunction: {
