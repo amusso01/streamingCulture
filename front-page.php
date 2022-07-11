@@ -7,11 +7,10 @@
 
     <main role="main">
 
-      <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part( 'partials/home/ricerca' ); ?>
+      <?php get_template_part( 'partials/home/ricerca' ); ?>
+      <?php get_template_part( 'partials/home/capitoli-ricerca' ); ?>
 
-      <?php endwhile; ?>
 
     </main>
 

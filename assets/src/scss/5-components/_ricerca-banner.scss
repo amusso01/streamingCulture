@@ -1,0 +1,40 @@
+.c-ricercaLink{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./../images/asterics.svg);
+  background-size: 0px;
+  transition: all .4s ease-in-out;
+
+  &:hover{
+    background-size: 350px;
+  }
+
+  h3{
+    line-height: 80px;
+  }
+
+  >a{
+
+    &:hover{
+
+      h3{
+        @apply u-decoration-purple-dark u-underline;
+
+      }
+
+      .o-arrow{
+        @apply -u-translate-x-30 u-scale-100;
+
+      }
+
+  
+    }
+  }
+
+}
+
+.c-whoBanner{
+  background-position: 55%;
+  background-repeat: no-repeat;
+  background-image: url(./../images/dealerBg.svg);
+}
