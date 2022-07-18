@@ -15,7 +15,7 @@ $events = get_field('evento');
           <img class="lazyload u-cover" data-srcset="<?php bml_the_image_srcset($event['immagine'])?>"  data-sizes="auto"  alt="<?php echo $event['titolo'] ?>">
         </figure>
         <div>
-          <p class="u-mb-30"><?php echo $event['titolo'] ?></p>
+          <p class="u-mb-30 u-font-semibold"><?php echo $event['titolo'] ?></p>
           <div class="u-rich-text js-richText">
             <?php echo $event['descrizione']; ?>
           </div>

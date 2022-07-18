@@ -1,0 +1,35 @@
+.c-iframe-calibro{
+  @apply u-py-25 u-relative u-w-screen u-px-25;
+
+  >h4{
+    @apply u-uppercase u-text-center u-mb-50 u-text-16 sm:u-text-20;
+
+  }
+
+  >p{
+    @apply u-text-center u-mt-20 u-text-grigio-scuro u-text-14 ;
+
+  }
+}
+
+.c-image-calibro{
+  @apply u-border-t-1 u-border-line-grey u-py-35 u-mt-55 u-mb-30;
+
+  >h4{
+    @apply u-uppercase u-text-center u-mb-50 u-text-16 sm:u-text-20;
+
+  }
+
+  figcaption{
+    @apply u-mt-25 u-text-grigio-scuro u-text-14 ;
+
+  }
+
+  .img-desktop{
+    @apply u-hidden  sm:u-block;
+  }
+
+  .img-mobile{
+    @apply  u-block sm:u-hidden;
+  }
+}

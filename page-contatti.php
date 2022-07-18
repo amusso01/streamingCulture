@@ -7,7 +7,7 @@
 
     <main role="main ">
 
-      <p class="u-mt-40 u-mb-40 u-text-center">Per info e contatti compilare il form o scrivere una mail a</p>
+      <p class="u-mt-40 u-mb-20 sm:u-mb-40 l-container--small u-text-center">Per info e contatti compilare il form o scrivere una mail a</p>
       <a href="mailto:info@streamingculture.it" class="u-text-center u-block u-text-30 u-font-bold hover:u-text-orange">info@streamingculture.it</a>
 
       <div class="u-mt-40 l-container--small ">

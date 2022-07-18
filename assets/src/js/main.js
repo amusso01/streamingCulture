@@ -8,13 +8,15 @@ import Fade from './transitions/Fade'
 
 import { init as globalInit } from './components/global.js';
 import { init as richTextInit } from './components/richText.js';
+import { init as resizeInit } from './components/resize.js';
 import Scroll2Reveal from './vendors/Scroll2Reveal.js';
 import AlpineInstance from 'alpinejs';
-import { HomeRenderer } from './components/renderers.js';
+import { HomeRenderer, RicercaRenderer } from './components/renderers.js';
 
 // Init on first load
 globalInit();
 richTextInit();
+resizeInit();
 const s2r = new Scroll2Reveal();
 
 
@@ -24,7 +26,8 @@ const H = new Highway.Core({
     default: Fade
   },
   renderers: {
-    home: HomeRenderer
+    home: HomeRenderer,
+    ricerca: RicercaRenderer
   }
 });
 

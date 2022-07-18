@@ -117,7 +117,7 @@
       if ( in_array( 'current-menu-item', $classes ) 
         || in_array( 'current-menu-ancestor', $classes )
         || in_array( 'current-page-ancestor', $classes ) ) {
-        $list_classes[] = 'o-nav-secondary-menuListItem--current';
+        $list_classes[] = 'o-nav-menuListItem--current';
       }
 
       if(!get_field('link_attivo', $item->ID)){

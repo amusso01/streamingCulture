@@ -21,6 +21,9 @@ module.exports = {
       text: '#000032',
       orange: '#FF7100',
       red: '#e05555',
+      grigio: '#F5F5F5',
+      'grigio-scuro': '#737373',
+      'line-grey': '#D9D9D9',
       purple: {
         'dark': '#5032C8',
         'light': '#E3DCFF',

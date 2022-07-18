@@ -6,7 +6,7 @@
         <a data-s2r-el href="https://www.linkedin.com/shareArticle?url=<?php echo get_the_permalink() ?>"><?php get_template_part( 'assets/dist/svgs/svg', 'linkedin' ) ?></a>
       </div>
       <?php if ( get_the_content() ) : ?>
-        <div class="u-rich-text u-mt-30 u-mb-50 u-col-span-6 md:u-mt-50 md:u-mb-70 js-richText">
+        <div class="u-rich-text u-mt-30 u-mb-50 u-col-span-7 sm:u-col-span-6 md:u-mt-50 md:u-mb-70 js-richText">
           <?php the_content(); ?>
         </div>
       <?php endif; ?>

@@ -15,5 +15,18 @@ class HomeRenderer extends Highway.Renderer {
 
 }
 
+// Ricerca
+class RicercaRenderer extends Highway.Renderer {
+	
+  onEnterCompleted() {
+    const iframes = document.querySelectorAll('.js-iframe-calibro')
 
-export { HomeRenderer }
+    iframes.forEach(iframe => {
+      iframe.style.left = '-'+iframe.getBoundingClientRect().left+'px'
+    });
+
+  }
+}
+
+
+export { HomeRenderer, RicercaRenderer }

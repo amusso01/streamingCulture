@@ -1,24 +1,50 @@
 .c-ricercaLink{
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(./../images/asterics.svg);
-  background-size: 0px;
+  background-size: 280px;
   transition: all .4s ease-in-out;
 
   &:hover{
-    background-size: 350px;
+    background-size: 400px;
   }
 
-  h3{
-    line-height: 80px;
+  &-01{
+    background-image: url(./../images/asterics.svg);
   }
+  &-02{
+    background-image: url(./../images/02.svg);
+  }
+  &-03{
+    background-image: url(./../images/03.svg);
+  }
+  &-04{
+    background-image: url(./../images/04.svg);
+  }
+
+  &-disabled-01{
+    background-size: 300px;
+    background-image: url(./../images/01-off.svg);
+  }
+  &-disabled-02{
+    background-size: 300px;
+    background-image: url(./../images/02-off.svg);
+  }
+  &-disabled-03{
+    background-size: 300px;
+    background-image: url(./../images/03-off.svg);
+  }
+  &-disabled-04{
+    background-size: 380px;
+    background-image: url(./../images/04-off.svg);
+  }
+
 
   >a{
 
     &:hover{
 
       h3{
-        @apply u-decoration-purple-dark u-underline;
+        @apply u-underline;
 
       }
 

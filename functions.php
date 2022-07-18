@@ -37,4 +37,7 @@
   // Add custom editor styles to WYSIWYG
   require_once( get_template_directory() . '/includes/editor_styles.php' );
 
+  // Register Guttenberg Blocks
+  require_once( get_template_directory() . '/includes/guttenberg.php' );
+
 ?>
