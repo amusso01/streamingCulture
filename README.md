@@ -1,6 +1,6 @@
-[![ByMattLee](http://hosted.bymattlee.com/github/bymattlee-logo.png)](http://bymattlee.com)
 
-# ByMattLee WP Starter Theme
+
+# AM WP Starter Theme
 A starter boilerplate WordPress theme [Gulp](https://gulpjs.com/), [Tailwind CSS](https://tailwindcss.com/), [rollup.js](https://rollupjs.org/), [Alpine.js](https://alpinejs.dev/) and [Highway](https://highway.js.org/).
 ___
 ## Installation
@@ -65,7 +65,6 @@ ___
 
 ##### SVGS
 * Place all SVG files in the `assets/src/svg` directory
-* They will then be optimized and added to a sprite at `assets/dist/svg/sprite.svg`
 
 ##### Other Assets
 * All assets (fonts, videos, swfs, etc) under `assets/src` will be copied to `assets/dist` on build
@@ -94,9 +93,4 @@ svg {
     }
 }
 ```
-___
-## Contact
-* Matt Lee - `@bymattlee` on most platforms
-* Visit my website at [bymattlee.com](https://bymattlee.com)
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/bymattlee?style=social)](https://twitter.com/bymattlee)
