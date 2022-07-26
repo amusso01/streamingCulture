@@ -4,7 +4,7 @@
 
 .o-nav {
   $this: &;
-  @apply u-fixed u-w-full u-z-10 u-bg-purple-light u-left-0 -u-top-full u-ease-out u-duration-medium u-transition-all xs:u-flex sm:u-block;
+  @apply u-fixed u-w-full u-z-10 u-bg-purple-light u-left-0 -u-top-[150%] u-ease-out u-duration-medium u-transition-all xs:u-flex sm:u-block;
 
   &.s-open{
     @apply u-top-0;
@@ -44,44 +44,50 @@
 
   &-secondary-menuListItem{
 
-    &:nth-child(1){
-      #{$this}-secondary-menuItem {
-        &::before{
-          content: "01 - ";
+    // &:nth-child(1){
+    //   #{$this}-secondary-menuItem {
+    //     &::before{
+    //       content: "01 - ";
           
-        }
-      }
-    }
+    //     }
+    //   }
+    // }
 
-    &:nth-child(2){
-      #{$this}-secondary-menuItem {
-        &::before{
-          content: "02 - ";
+    // &:nth-child(2){
+    //   #{$this}-secondary-menuItem {
+    //     &::before{
+    //       content: "02 - ";
           
-        }
-      }
-    }
+    //     }
+    //   }
+    // }
 
-    &:nth-child(3){
-      #{$this}-secondary-menuItem {
-        &::before{
-          content: "03 - ";
+    // &:nth-child(3){
+    //   #{$this}-secondary-menuItem {
+    //     &::before{
+    //       content: "03 - ";
           
-        }
-      }
-    }
+    //     }
+    //   }
+    // }
 
-    &:nth-child(4){
+    // &:nth-child(4){
 
-      @apply u-mb-20 sm:u-mb-45;
+    //   @apply u-mb-20 sm:u-mb-45;
 
 
-      #{$this}-secondary-menuItem {
-        &::before{
-          content: "04 - ";
+    //   #{$this}-secondary-menuItem {
+    //     &::before{
+    //       content: "04 - ";
           
-        }
-      }
+    //     }
+    //   }
+    // }
+
+
+    &:last-child{
+      @apply u-mt-20 sm:u-mt-45;
+      
     }
 
   }
@@ -125,7 +131,7 @@
 
 // TENDINA
 .o-nav-curtains{
-  @apply -u-top-full u-transition-all u-duration-medium u-ease-in;
+  @apply -u-top-[170%] u-transition-all u-duration-medium u-ease-in;
 
   &.s-active{
     @apply u-top-0;

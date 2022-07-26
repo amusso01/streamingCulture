@@ -24,7 +24,7 @@
 <div class="u-w-full u-h-1 u-bg-text"></div>
 
 <section class="l-container--small u-mt-30 u-mb-70">
-  <h2 class="u-h2" >Università degli Studi di Milano-Bicocca</h2>
+  <h2 class="u-h2" >Università degli Studi di Milano-Statale</h2>
 
   <div class="u-grid u-grid-cols-2 md:u-grid-cols-3 lg:u-grid-cols-4 u-gap-x-35 sm:u-gap-x-67 u-gap-y-55 u-mt-25">
     <?php if(get_field('universita_statale')) : ?>

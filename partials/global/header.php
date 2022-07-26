@@ -1,6 +1,6 @@
 <header class="u-py-20 c-header-main " role="banner">
   <div class="l-container--wide u-flex u-items-center u-justify-between">
-    <h1 id="homeLogo" class=" u-scale-75 u-duration-normal u-transition-all hover:u-scale-100 ">
+    <h1 id="homeLogo" class=" sm:u-scale-75 u-duration-normal u-transition-all sm:hover:u-scale-100 u-origin-left">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="xs:u-flex xs:u-items-center" aria-label="<?php bloginfo(); ?>">
         <svg width="292" height="89" viewBox="0 0 292 89" class=" u-w-200 xs:u-w-full" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <rect width="93" height="89" fill="url(#pattern0)"/>

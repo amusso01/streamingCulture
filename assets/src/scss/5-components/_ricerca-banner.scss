@@ -38,6 +38,10 @@
     background-image: url(./../images/04-off.svg);
   }
 
+  &-disabled{
+    background-size: 300px;
+  }
+
 
   >a{
 
@@ -49,7 +53,7 @@
       }
 
       .o-arrow{
-        @apply -u-translate-x-30 u-scale-100;
+        @apply -u-translate-x-30 sm:u-scale-100;
 
       }
 
