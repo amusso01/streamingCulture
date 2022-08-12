@@ -27,6 +27,13 @@ $brands = get_field('loghi_footer', 'options');
          </div>
       </div>
     </div>
+
   </div>
 </footer>
+<div class="l-container--wide c-after-footer ">
+  <div class="u-flex u-flex-wrap u-flex-col sm:u-flex-row sm:u-justify-end u-gap-x-4 u-py-4 sm:u-py-3" >
+    <p class="u-text-14 u-font-medium">Designed by <a class="hover:u-underline u-font-semibold" href="mailto:bottobaggy@gmail.com">Alessandra Botto</a> &</p>
+    <p class="u-text-14 u-font-medium">Developed by <a class="hover:u-underline u-font-semibold" href="mailto:musso.a@icloud.com">Andrea Musso</a></p>
+  </div>
+</div>
 
