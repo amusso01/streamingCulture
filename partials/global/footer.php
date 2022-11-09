@@ -13,17 +13,19 @@ $brands = get_field('loghi_footer', 'options');
             <a href="<?php echo $brands['uni_milano']['link']  ?>"><img src="<?php echo $brands['uni_milano']['immagine'] ?>" alt="Uni Milano logo"></a> 
          </div>
       </div>
-      <div class="u-flex u-flex-col  u-mb-40 sm:u-mb-0 sm:u-gap-y-30">
-        <h4 class=" u-italic u-text-20 sm:u-text-25 u-font-normal">Con il contributo di</h4>
-         <div class="u-flex u-items-center" >
-         <a href="<?php echo $brands['cariplo']['link']  ?>"><img src="<?php echo $brands['cariplo']['immagine'] ?>" alt="Fondazione Cariplo logo"></a> 
-         </div>
-      </div>
+     
       <div class="u-flex u-flex-col  u-mb-40 sm:u-mb-0 sm:u-gap-y-30">
         <h4 class=" u-italic u-text-20 sm:u-text-25 u-font-normal">Con la collaborazione di</h4>
          <div class="u-flex u-gap-x-30 u-items-center u-mt-20 u-flex-col u-gap-y-25 xs:u-flex-row">
          <a href="<?php echo $brands['che_fare']['link'] ?>"><img src="<?php echo $brands['che_fare']['immagine'] ?>" alt="Che Fare logo"></a> 
          <a href="<?php echo $brands['calibro']['link'] ?>"><img src="<?php echo $brands['calibro']['immagine'] ?>" alt="Calibro logo"></a> 
+         </div>
+      </div>
+
+      <div class="u-flex u-flex-col  u-mb-40 sm:u-mb-0 sm:u-gap-y-30">
+        <h4 class=" u-italic u-text-20 sm:u-text-25 u-font-normal">Con il contributo di</h4>
+         <div class="u-flex u-items-center" >
+         <a href="<?php echo $brands['cariplo']['link']  ?>"><img src="<?php echo $brands['cariplo']['immagine'] ?>" alt="Fondazione Cariplo logo"></a> 
          </div>
       </div>
     </div>

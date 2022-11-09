@@ -14,7 +14,7 @@
 
     </main>
 
-    <?php get_template_part( 'partials/home/modal' ) ?>
+    <!-- <?php get_template_part( 'partials/home/modal' ) ?> -->
 
   </div>
 </div>
